@@ -1,0 +1,15 @@
+<form [formGroup]="productForm" (submit)="onFormSubmit()">
+        <div class="col-md-3 offset-md-4 text-primary"><br><br><br>
+
+
+                <div>
+                        <label for="frontImage">Upload Your CV: </label>
+                        <input (change)="onFileSelected($event, 'FRONT')" type="file" id="frontImage">
+                </div>
+
+
+                <br>
+
+                <button [disabled]="productForm.invalid && !imgFront && !imgBack">Submit</button>
+        </div>
+</form>

@@ -1,0 +1,17 @@
+<br><br>
+<div class=" offset-md-4  col-md-8 bg-info text-white" style="width: 19rem;">
+        <div class="container">
+                <form [formGroup]="LoginForm"><br>
+                        <div class="row-sm">
+                                <div class="col-sm offset-md-1">
+                                        <label for="">Username</label>
+                                        <input type="text" formControlName="username">
+                                        <label for="">Password</label>
+                                        <input type="password" formControlName="password">
+                                        <button class="bg-primary text-dark" (click)="onlogin()">Login</button>
+                                        <button class="bg-warning text-dark" (click)="onlogout()">Logout</button>
+                                </div>
+                        </div>
+                </form>
+        </div>
+</div>

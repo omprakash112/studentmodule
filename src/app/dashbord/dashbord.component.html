@@ -1,0 +1,26 @@
+<div class="header"></div>
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+</label>
+<div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+                <li class="name">MeanAcadamy</li>
+                <li><a routerLink="/dashbord/profile" routerLinkActive="active">Profile</a></li>
+                <li><a routerLink="/dashbord/ressume" routerLinkActive="active"> Resume</a></li>
+                <li><a routerLink="/dashbord/course" routerLinkActive="active">Course</a></li>
+                <!-- <li><a routerLink="/dashbord/exam" routerLinkActive="active">Exam</a></li> -->
+                <!-- <li><a routerLink="/dashbord/batch" routerLinkActive="active">Batch</a></li> -->
+                <!-- <li><a routerLink="/dashbord/" routerLinkActive="active">Interview Preparation</a></li> -->
+                <!-- <li><a routerLink="/dashbord/" routerLinkActive="active">Ressume</a></li> -->
+                <!-- <li><a routerLink="/dashbord/" routerLinkActive="active">Assignment</a></li>
+                <li><a routerLink="/dashbord/" routerLinkActive="active">Course</a></li> -->
+                <!-- <li><a routerLink="/dashbord/" routerLinkActive="active">Assignment</a></li> -->
+                <li><a routerLink="/dashbord/payment" routerLinkActive="active">Payment</a></li>
+                <li><a routerLink="/dashbord/document" routerLinkActive="active">Documents</a></li>
+        </ul>
+</div>
+
+<router-outlet></router-outlet>
